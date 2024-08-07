@@ -1,0 +1,12 @@
+.title {
+  @apply transition-all;
+
+  &::before {
+    content: '< ';
+    @apply text-light-gray;
+  }
+  &::after {
+    content: ' >';
+    @apply text-light-gray;
+  }
+}

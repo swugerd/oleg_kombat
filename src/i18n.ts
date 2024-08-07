@@ -5,14 +5,16 @@ i18n.use(initReactI18next).init({
   resources: {
     ru: {
       translation: {
+        notFoundBtn: 'Вернуться на главную',
         titles: {
           about: 'Обо мне',
           workExperience: 'Опыт работы',
           projects: 'Проекты',
         },
         main: {
-          title: 'Привет, я Олег Full-Stack - Разработчик',
-          subTitle:
+          title: 'Привет, я Олег',
+          subTitle: 'Full-Stack - Разработчик',
+          description:
             'Я Full-stack разработчик. В настоящее время я работаю Front-end разработчиком',
           resumeBtn: 'Резюме',
         },
@@ -64,14 +66,16 @@ i18n.use(initReactI18next).init({
     },
     en: {
       translation: {
+        notFoundBtn: 'Back to the main page',
         titles: {
           about: 'About me',
           workExperience: 'Work Experience',
           projects: 'Projects',
         },
         main: {
-          title: 'Hello, my name is Oleg, I am Full-Stack - web developer',
-          subTitle:
+          title: 'Hello, my name is Oleg',
+          subTitle: 'I am Full-Stack - web developer',
+          description:
             'I am Full-stack web developer. I am currently working as front end web developer',
           resumeBtn: 'Resume',
         },

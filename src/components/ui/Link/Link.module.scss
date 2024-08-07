@@ -1,0 +1,9 @@
+.icon {
+  @apply relative flex;
+  &::after {
+    content: '';
+    background-image: url('/img/icons/arrow.svg');
+    background-repeat: no-repeat;
+    @apply absolute h-[17px] w-[20px] right-4 top-[50%] translate-y-[-45%];
+  }
+}

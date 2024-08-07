@@ -1,0 +1,80 @@
+.line1 {
+  animation: line1 2s forwards;
+  &::before {
+    content: '';
+    animation: ball1 2s forwards;
+    @apply absolute bg-white rounded-full h-[8px] w-[8px] left-[-2px];
+  }
+}
+
+.line2 {
+  animation: line2 2s forwards;
+  &::before {
+    content: '';
+    animation: ball2 2s forwards;
+    @apply absolute bg-white rounded-full h-[8px] w-[8px] top-[-2px];
+  }
+}
+
+.line3 {
+  animation: line3 2s forwards;
+  &::before {
+    content: '';
+    animation: ball3 2s forwards;
+    @apply absolute bg-white rounded-full h-[8px] w-[8px] top-[-2px] right-[-2.5px];
+  }
+}
+
+@keyframes line1 {
+  0% {
+    @apply h-[0px];
+  }
+  100% {
+    @apply h-[220px];
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    @apply top-[0px];
+  }
+  100% {
+    @apply top-[215px];
+  }
+}
+
+@keyframes line2 {
+  0% {
+    @apply w-[0px];
+  }
+  100% {
+    @apply w-[450px];
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    @apply left-[0px];
+  }
+  100% {
+    @apply left-[450px];
+  }
+}
+
+@keyframes line3 {
+  0% {
+    @apply h-[0px];
+  }
+  100% {
+    @apply h-[205px];
+  }
+}
+
+@keyframes ball3 {
+  0% {
+    @apply bottom-[0px];
+  }
+  100% {
+    @apply bottom-[215px];
+  }
+}
