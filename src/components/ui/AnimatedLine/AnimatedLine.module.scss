@@ -1,5 +1,6 @@
 .line1 {
   animation: line1 2s forwards;
+  @apply top-0 ml-[15px] w-[3px];
   &::before {
     content: '';
     animation: ball1 2s forwards;
@@ -9,6 +10,7 @@
 
 .line2 {
   animation: line2 2s forwards;
+  @apply bottom-[202px] left-[-20px] h-[3px];
   &::before {
     content: '';
     animation: ball2 2s forwards;
@@ -18,6 +20,7 @@
 
 .line3 {
   animation: line3 2s forwards;
+  @apply bottom-0 ml-[15px] w-[3px];
   &::before {
     content: '';
     animation: ball3 2s forwards;

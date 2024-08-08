@@ -8,7 +8,13 @@
 }
 
 .bg path {
+  transition: opacity 0.2s ease-in-out;
   stroke-dasharray: 3000;
+  opacity: 0;
+}
+
+.bg.animation path {
   animation: draw forwards;
   animation-duration: 12s;
+  opacity: 1;
 }
