@@ -36,7 +36,7 @@ i18n.use(initReactI18next).init({
         },
         projects: {
           title: 'Мои проекты',
-          steck: 'Стек',
+          stack: 'Стек',
           moreBtn: 'Подробнее',
           project1: {
             name: 'Социальная сеть',
@@ -46,7 +46,7 @@ i18n.use(initReactI18next).init({
           project2: {
             name: 'Видеохостинг',
             description:
-              'Масштабный проект, который всё ещё находится в разработке',
+              'Масштабный проект, который всё ещё находится в разработке (На данный момент практически готова только серверная часть)',
           },
           project3: {
             name: 'Дискорд бот',
@@ -95,7 +95,7 @@ i18n.use(initReactI18next).init({
         },
         projects: {
           title: 'My projects',
-          steck: 'Stack',
+          stack: 'Stack',
           moreBtn: 'More',
           project1: {
             name: 'Social Network',
@@ -104,7 +104,8 @@ i18n.use(initReactI18next).init({
           },
           project2: {
             name: 'Video hosting',
-            description: 'A large-scale project that is still in development',
+            description:
+              'A large-scale project that is still in development (At the moment, only the server side is almost ready)',
           },
           project3: {
             name: 'Discord bot',

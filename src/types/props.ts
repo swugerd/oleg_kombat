@@ -1,4 +1,5 @@
 import { skills } from '@/components/modules/AboutSection/skills.data'
+import { projects } from '@/components/modules/ProjectsSection/projects.data'
 import { HTMLAttributeAnchorTarget } from 'react'
 
 export interface IHeadingWithBracketsProps {
@@ -39,4 +40,9 @@ export interface IWaveBackgroundProps extends IObserverProps {
 
 export interface IObserverProps {
   isVisible: boolean
+}
+
+export interface IProjectItemProps {
+  item: (typeof projects)[0]
+  index: number
 }
