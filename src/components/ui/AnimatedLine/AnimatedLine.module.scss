@@ -8,26 +8,6 @@
   }
 }
 
-.line2 {
-  animation: line2 2s forwards;
-  @apply bottom-[202px] left-[-20px] h-[3px];
-  &::before {
-    content: '';
-    animation: ball2 2s forwards;
-    @apply absolute bg-white rounded-full h-[8px] w-[8px] top-[-2px];
-  }
-}
-
-.line3 {
-  animation: line3 2s forwards;
-  @apply bottom-0 ml-[15px] w-[3px];
-  &::before {
-    content: '';
-    animation: ball3 2s forwards;
-    @apply absolute bg-white rounded-full h-[8px] w-[8px] top-[-2px] right-[-2.5px];
-  }
-}
-
 @keyframes line1 {
   0% {
     @apply h-[0px];
@@ -43,6 +23,16 @@
   }
   100% {
     @apply top-[215px];
+  }
+}
+
+.line2 {
+  animation: line2 2s forwards;
+  @apply bottom-[202px] left-[-20px] h-[3px];
+  &::before {
+    content: '';
+    animation: ball2 2s forwards;
+    @apply absolute bg-white rounded-full h-[8px] w-[8px] top-[-2px];
   }
 }
 
@@ -64,6 +54,16 @@
   }
 }
 
+.line3 {
+  animation: line3 2s forwards;
+  @apply bottom-0 ml-[15px] w-[3px];
+  &::before {
+    content: '';
+    animation: ball3 2s forwards;
+    @apply absolute bg-white rounded-full h-[8px] w-[8px] top-[-2px] right-[-2.5px];
+  }
+}
+
 @keyframes line3 {
   0% {
     @apply h-[0px];
@@ -74,6 +74,34 @@
 }
 
 @keyframes ball3 {
+  0% {
+    @apply bottom-[0px];
+  }
+  100% {
+    @apply bottom-[215px];
+  }
+}
+
+.line4 {
+  animation: line4 2s forwards;
+  @apply h-[3px] top-[120px];
+  &::before {
+    content: '';
+    animation: ball4 2s forwards;
+    @apply absolute bg-white rounded-full h-[8px] w-[8px] top-[-2px] right-[-2.5px];
+  }
+}
+
+@keyframes line4 {
+  0% {
+    @apply w-[0px];
+  }
+  100% {
+    @apply w-[302px];
+  }
+}
+
+@keyframes ball4 {
   0% {
     @apply bottom-[0px];
   }

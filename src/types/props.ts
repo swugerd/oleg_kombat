@@ -33,6 +33,10 @@ export interface IAnimatedLineProps {
   className?: string
 }
 
+export interface IWaveBackgroundProps extends IObserverProps {
+  isLeftSide?: boolean
+}
+
 export interface IObserverProps {
   isVisible: boolean
 }

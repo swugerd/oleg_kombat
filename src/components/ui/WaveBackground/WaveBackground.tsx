@@ -1,8 +1,11 @@
-import { IObserverProps } from '@/types/props'
+import { IWaveBackgroundProps } from '@/types/props'
 import { FC } from 'react'
 import s from './WaveBackground.module.scss'
 
-const WaveBackground: FC<IObserverProps> = ({ isVisible }) => {
+const WaveBackground: FC<IWaveBackgroundProps> = ({
+  isVisible,
+  isLeftSide = false,
+}) => {
   return (
     <svg
       width='100%'
@@ -10,7 +13,7 @@ const WaveBackground: FC<IObserverProps> = ({ isVisible }) => {
       viewBox='0 0 1520 1103'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={`absolute left-0 right-0 bottom-0 top-0 z-[-5] ${s.bg} ${isVisible ? s.animation : ''}`}
+      className={`absolute ${isLeftSide ? 'right-[500px]' : 'left-0'} right-0 bottom-0 top-0 z-[-5] ${s.bg} ${isVisible ? s.animation : ''}`}
     >
       <path
         d='M1370.69 -69.9026C1300.72 -100.649 1216.78 -96.9261 1149.88 -60.1134C1082.84 -23.3008 1034.23 45.9124 1021.8 122.019C1006.02 218.808 1045.41 324.006 1005.18 413.349C971.103 489.043 890.515 529.44 817.33 567.218C744.005 605.133 665.791 654.355 644.981 734.874C630.875 789.197 645.679 851.102 618.165 899.772C590.092 949.269 526.544 967.469 470.398 961.954C414.252 956.577 361.737 932.586 307.267 917.42C142.46 871.232 -43.2965 909.286 -177.237 1016.97'

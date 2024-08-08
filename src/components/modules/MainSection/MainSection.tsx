@@ -20,7 +20,6 @@ const MainSection = () => {
 
   return (
     <section className={`h-[100vh] container m-auto`} ref={sectionRef}>
-      <div className='relative'></div>
       <SocialsList isVisible={isVisible} />
       <div className='pt-[240px] pl-[200px]'>
         <MainTitle isVisible={isVisible} />

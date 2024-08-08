@@ -1,0 +1,30 @@
+.title {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('/img/icons/home.svg');
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.line {
+  @apply bg-white h-[2px];
+}
+
+.line.animation {
+  animation: line 2.2s 0.5s forwards;
+}
+
+@keyframes line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 110%;
+  }
+}

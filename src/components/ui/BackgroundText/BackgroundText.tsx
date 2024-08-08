@@ -7,8 +7,6 @@ const BackgroundText: FC<IBackgroundTextProps> = ({ text, className }) => {
   const { animatedText } = useAnimateText(text)
   const ref = useRef<HTMLPreElement>(null)
 
-  console.log('da')
-
   useEffect(() => {
     if (ref.current) {
       ref.current.scrollTop = ref.current.scrollHeight
