@@ -11,10 +11,10 @@ const Skill: FC<ISkillProps> = ({ item }) => {
   return (
     <motion.li
       className='flex flex-col items-center py-[15px] px-[45px] rounded-[10px] border border-light-gray mx-[10px] my-[15px] box-border max-w-[134px]'
-      initial={{ opacity: 0, transform: 'translateY(75px)' }}
+      initial={{ opacity: 0, y: 75 }}
       animate={{
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(75px)',
+        y: isVisible ? 0 : 75,
       }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
