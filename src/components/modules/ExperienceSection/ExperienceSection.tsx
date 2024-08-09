@@ -11,6 +11,7 @@ import { useObserver } from '@/hooks/useObserver'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
+import { companies } from './companies.data'
 
 const ExperienceSection = () => {
   const { t } = useTranslation()
@@ -36,7 +37,13 @@ const ExperienceSection = () => {
             className='max-w-[900px] mx-auto'
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <CompanyListItem isVisible={isVisible} />
+            {companies.map((item) => (
+              <CompanyListItem
+                isVisible={isVisible}
+                item={item}
+                key={item.tKeyName}
+              />
+            ))}
           </motion.ul>
         </AnimatePresence>
 

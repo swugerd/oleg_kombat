@@ -1,4 +1,5 @@
 import { skills } from '@/components/modules/AboutSection/skills.data'
+import { companies } from '@/components/modules/ExperienceSection/companies.data'
 import { projects } from '@/components/modules/ProjectsSection/projects.data'
 import { HTMLAttributeAnchorTarget } from 'react'
 
@@ -45,4 +46,8 @@ export interface IObserverProps {
 export interface IProjectItemProps {
   item: (typeof projects)[0]
   index: number
+}
+
+export interface ICompanyListItemProps extends IObserverProps {
+  item: (typeof companies)[0]
 }
