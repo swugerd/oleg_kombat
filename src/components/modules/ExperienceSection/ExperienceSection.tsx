@@ -47,7 +47,7 @@ const ExperienceSection = () => {
         {isVisible && (
           <BackgroundText
             text={bgFunctionsTexts[3]}
-            className='absolute top-[100px] right-[150px] max-h-[150px] overflow-y-auto'
+            className='absolute top-[100px] right-[150px]'
           />
         )}
 

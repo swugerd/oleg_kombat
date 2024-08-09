@@ -72,7 +72,7 @@ const AboutSection = () => {
       {isVisible && (
         <BackgroundText
           text={bgFunctionsTexts[2]}
-          className='absolute top-[110px] left-[120px]'
+          className='absolute top-[110px] left-[120px] max-h-[150px] overflow-y-auto'
         />
       )}
       <DotsAnimation

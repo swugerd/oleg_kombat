@@ -48,12 +48,12 @@ const MainSection = () => {
         <>
           <BackgroundText
             text={bgFunctionsTexts[0]}
-            className='absolute top-[80px] left-[20vw] max-h-[150px] overflow-y-auto'
+            className='absolute top-[80px] left-[20vw]'
           />
 
           <BackgroundText
             text={bgFunctionsTexts[1]}
-            className='absolute bottom-[60px] left-[15vw]'
+            className='absolute bottom-[50px] left-[15vw]'
           />
         </>
       )}

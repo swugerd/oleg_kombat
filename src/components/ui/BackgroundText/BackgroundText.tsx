@@ -14,7 +14,10 @@ const BackgroundText: FC<IBackgroundTextProps> = ({ text, className }) => {
   }, [animatedText])
 
   return (
-    <pre ref={ref} className={`${className} ${s.scroll}`}>
+    <pre
+      ref={ref}
+      className={`${className} ${s.scroll} max-h-[150px] overflow-y-auto`}
+    >
       {animatedText}
     </pre>
   )
