@@ -1,14 +1,18 @@
 import MainLayout from '@/components/layouts/MainLayout'
-import type { Metadata } from 'next'
+import { SITE_DESCRIPTION, SITE_NAME } from '@/constants/seo'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const viewport: Viewport = {
+  themeColor: 'black',
+}
+
 export const metadata: Metadata = {
-  title: 'Олег Киреев',
-  description:
-    'Добро пожаловать на мой личный сайт! Здесь вы найдете мое портфолио, а также информацию обо мне и моем профессиональном пути. Я стремлюсь к постоянному развитию и готов поделиться своими проектами и идеями. Надеюсь, вам будет интересно!',
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
 }
 
 export default function RootLayout({
