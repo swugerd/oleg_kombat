@@ -30,7 +30,7 @@ const MainSection = () => {
             exit={{ opacity: 0 }}
             transition={isVisible ? { duration: 1, delay: 1 } : {}}
           >
-            <h2 className='text-gray font-normal leading-[22px] text-[18px] max-w-[500px] mb-[75px]'>
+            <h2 className='text-gray font-normal leading-[26px] tracking-[1px] text-[18px] max-w-[500px] mb-[75px]'>
               {t('main.description')}
             </h2>
             <Link text={t('main.resumeBtn')} link='/files/resume.pdf' />

@@ -11,6 +11,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
+import s from './AboutSection.module.scss'
 import { skills } from './skills.data'
 
 const AboutSection = () => {
@@ -39,7 +40,9 @@ const AboutSection = () => {
             className='rounded-[20px]'
           />
           <div className='max-w-[580px]'>
-            <h3 className='text-white font-extrabold text-[30px] leading-[36px] mb-[30px]'>
+            <h3
+              className={`text-white font-extrabold text-[30px] leading-[36px] mb-[30px] ${s.quote}`}
+            >
               {t('about.title')}
             </h3>
             <p className='text-[18px] leading-[27px] mb-[30px] text-gray font-normal'>

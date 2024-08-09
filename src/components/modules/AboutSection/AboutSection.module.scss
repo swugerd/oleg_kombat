@@ -1,0 +1,13 @@
+.quote {
+  position: relative;
+  &::before {
+    content: '';
+    background-image: url('/img/icons/quote.svg');
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 85px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+  }
+}

@@ -18,7 +18,7 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
   const isOdd = index % 2 !== 0
   const isNotLastItem = index + 1 < projects.length
 
-  const dotsClass = `bottom-[-100px] ${isOdd ? 'right-[400px]' : 'left-[400px]'}`
+  const dotsClass = `${isOdd ? 'right-[400px]' : 'left-[400px]'}`
 
   return (
     <motion.li
@@ -74,7 +74,11 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
         />
       </div>
 
-      {isNotLastItem && <DotsAnimation className={dotsClass} />}
+      {isNotLastItem && (
+        <DotsAnimation
+          className={`2xl:bottom-[-100px] bottom-[-150px] ${dotsClass}`}
+        />
+      )}
     </motion.li>
   )
 }

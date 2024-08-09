@@ -18,6 +18,7 @@ const MainTitle: FC<IObserverProps> = ({ isVisible }) => {
           }}
           exit={{ opacity: 0 }}
           transition={isVisible ? { duration: 1, delay: 0.5 } : {}}
+          className='mb-[30px]'
         >
           <HeadingWithBrackets
             text={t('main.title')}

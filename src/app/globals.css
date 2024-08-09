@@ -32,3 +32,8 @@ body::-webkit-scrollbar-thumb {
 * {
   box-sizing: border-box;
 }
+
+p {
+  letter-spacing: 1px;
+  line-height: 32px !important;
+}
