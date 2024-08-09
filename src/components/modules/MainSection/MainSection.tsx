@@ -5,7 +5,6 @@ import { bgFunctionsTexts } from '@/components/ui/BackgroundText/bgFunctionText.
 import DotsAnimation from '@/components/ui/DotsAnimation/DotsAnimation'
 import Link from '@/components/ui/Link/Link'
 import MainTitle from '@/components/ui/MainTitle/MainTitle'
-import ScrollArrow from '@/components/ui/ScrollArrow/ScrollArrow'
 import SocialsList from '@/components/ui/SocialsList/SocialsList'
 import WaveBackground from '@/components/ui/WaveBackground/WaveBackground'
 import { useObserver } from '@/hooks/useObserver'
@@ -19,7 +18,11 @@ const MainSection = () => {
   const { isVisible } = useObserver(sectionRef)
 
   return (
-    <section className={`h-[100vh] container m-auto`} ref={sectionRef}>
+    <section
+      className={`h-[100vh] container m-auto`}
+      ref={sectionRef}
+      id='main'
+    >
       <SocialsList isVisible={isVisible} />
       <div className='pt-[240px] pl-[200px]'>
         <MainTitle isVisible={isVisible} />
@@ -65,7 +68,6 @@ const MainSection = () => {
           exit={{ opacity: 0 }}
           transition={isVisible ? { duration: 1, delay: 1 } : {}}
         >
-          <ScrollArrow />
           <DotsAnimation className='bottom-[20px] right-[180px]' />
         </motion.div>
       </AnimatePresence>
