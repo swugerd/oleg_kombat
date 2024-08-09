@@ -13,7 +13,7 @@ const ProjectSection = () => {
       className={`pt-[85px] pb-[150px] bg-black-secondary relative overflow-x-hidden`}
       id='projects'
     >
-      <div className='container mx-auto'>
+      <div className='container mx-auto px-[150px]'>
         <HeadingWithBrackets
           isSectionTitle
           text={t('projects.title')}

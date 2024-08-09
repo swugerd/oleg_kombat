@@ -18,11 +18,11 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
   const isOdd = index % 2 !== 0
   const isNotLastItem = index + 1 < projects.length
 
-  const dotsClass = `bottom-[-150px] ${isOdd ? 'right-[250px]' : 'left-[250px]'}`
+  const dotsClass = `bottom-[-100px] ${isOdd ? 'right-[400px]' : 'left-[400px]'}`
 
   return (
     <motion.li
-      className={`flex justify-between relative ${isNotLastItem ? 'mb-[230px]' : ''} ${isOdd ? 'flex-row-reverse' : ''}`}
+      className={`flex flex-wrap 2xl:justify-around justify-center relative ${isNotLastItem ? 'mb-[230px]' : ''} ${isOdd ? 'flex-row-reverse' : ''}`}
       ref={ref}
       initial={{ opacity: 0, transform: 'translateY(75px)' }}
       animate={{
@@ -33,7 +33,7 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
       transition={{ duration: 0.5 }}
     >
       <div
-        className={`max-w-[530px] max-h-[400px] ${s.corner} ${isOdd ? s.odd : s.even}`}
+        className={`max-w-[530px] mb-[50px] max-h-[400px] ${s.corner} ${isOdd ? s.odd : s.even}`}
       >
         <Image
           src={item.img}
@@ -41,7 +41,7 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
           className='rounded-[20px] h-full w-full object-cover'
         />
       </div>
-      <div className='flex-[0.7]'>
+      <div>
         <h4 className='text-white text-[30px] leading-[36px] font-semibold mb-[20px]'>
           <span className='inline-block mr-[30px]'>0{index + 1}</span>
           <span>{t(item.tKeyName)}</span>
