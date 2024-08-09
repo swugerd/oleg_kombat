@@ -46,16 +46,16 @@ const AboutSection = () => {
               {t('about.title')}
             </h3>
             <p className='text-[18px] leading-[27px] mb-[30px] text-gray font-normal'>
-              {t('about.description')}
+              {t('about.description')}.
             </p>
             <p className='text-[18px] leading-[27px] text-gray font-normal'>
-              {t('about.subDescription')}
+              {t('about.subDescription')}.
             </p>
           </div>
         </div>
         <div>
           <p className='text-[18px] leading-[27px] mb-[50px] text-gray font-normal'>
-            {t('about.skills')}
+            {t('about.skills')}.
           </p>
           <AnimatePresence>
             <motion.ul
