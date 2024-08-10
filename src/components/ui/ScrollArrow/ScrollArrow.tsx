@@ -1,3 +1,4 @@
+'use client'
 import scrollArrow from '@/../public/img/icons/scroll-arrow.svg'
 import { useScroll } from '@/hooks/useScroll'
 import { AnimatePresence, motion } from 'framer-motion'
