@@ -17,6 +17,8 @@ const MainSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
   const { isVisible } = useObserver(sectionRef)
 
+  const resumeLink = `/files/${localStorage.getItem('lang') || 'ru'}/resume.pdf`
+
   return (
     <section
       className={`h-[100vh] container m-auto`}
@@ -36,7 +38,7 @@ const MainSection = () => {
             <h2 className='text-gray font-normal leading-[26px] tracking-[1px] text-[18px] max-w-[500px] mb-[75px]'>
               {t('main.description')}
             </h2>
-            <Link text={t('main.resumeBtn')} link='/files/resume.pdf' />
+            <Link text={t('main.resumeBtn')} link={resumeLink} />
           </motion.div>
         </AnimatePresence>
       </div>

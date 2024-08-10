@@ -2,6 +2,7 @@
 import HeadingWithBrackets from '@/components/ui/HeadingWithBrackets/HeadingWithBrackets'
 import { AllowedLangs } from '@/constants/langs'
 import { handleSmoothScroll } from '@/utils'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { headerLinks } from './links.data'
 
@@ -10,7 +11,15 @@ const Header = () => {
 
   const handleChangeLang = (lang: string) => {
     i18n.changeLanguage(lang)
+    localStorage.setItem('lang', lang)
   }
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('lang')
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage)
+    }
+  }, [i18n])
 
   return (
     <header className='text-base absolute left-0 right-0 z-[10]'>
