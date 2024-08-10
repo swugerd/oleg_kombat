@@ -9,10 +9,7 @@ const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Header />
-      <main>
-        {children}
-        <ScrollArrow />
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   )

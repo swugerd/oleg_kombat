@@ -2,6 +2,7 @@ import AboutSection from '@/components/modules/AboutSection/AboutSection'
 import ExperienceSection from '@/components/modules/ExperienceSection/ExperienceSection'
 import MainSection from '@/components/modules/MainSection/MainSection'
 import ProjectSection from '@/components/modules/ProjectsSection/ProjectSection'
+import ScrollArrow from '@/components/ui/ScrollArrow/ScrollArrow'
 
 const MainPage = () => {
   return (
@@ -10,6 +11,7 @@ const MainPage = () => {
       <AboutSection />
       <ExperienceSection />
       <ProjectSection />
+      <ScrollArrow />
     </>
   )
 }
