@@ -9,15 +9,19 @@ import SocialsList from '@/components/ui/SocialsList/SocialsList'
 import WaveBackground from '@/components/ui/WaveBackground/WaveBackground'
 import { useObserver } from '@/hooks/useObserver'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const MainSection = () => {
   const { t } = useTranslation()
   const sectionRef = useRef<HTMLDivElement>(null)
   const { isVisible } = useObserver(sectionRef)
+  const [resumeLink, setResumeLink] = useState('/files/ru/resume.pdf')
 
-  const resumeLink = `/files/${localStorage.getItem('lang') || 'ru'}/resume.pdf`
+  useEffect(() => {
+    const lang = localStorage.getItem('lang') || 'ru'
+    setResumeLink(`/files/${lang}/resume.pdf`)
+  }, [t])
 
   return (
     <section
