@@ -21,7 +21,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className={`sm:py-[85px] py-[50px] bg-black-secondary relative overflow-x-hidden`}
+      className={`sm:py-[85px] py-[50px] bg-black-secondary relative overflow-hidden`}
       id='about'
       ref={sectionRef}
     >

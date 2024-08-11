@@ -16,7 +16,7 @@ const Link: FC<ILinkProps> = ({
       target={target}
       className={`${className || ''} ${
         hasIcon ? s.icon : ''
-      } text-black bg-white py-[15px] px-[45px] rounded-[10px] block w-fit text-[16px] leading-[20px]
+      } text-black bg-white py-[15px] px-[45px] rounded-[10px] block w-fit sm:text-[16px] text-[14px] leading-[20px]
        font-semibold hover:opacity-70 transition-opacity`}
       rel='noopener noreferrer'
     >

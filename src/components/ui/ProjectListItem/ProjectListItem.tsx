@@ -21,7 +21,9 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
   const dotsClass = `${isOdd ? 'right-[400px]' : 'left-[400px]'}`
 
   return (
-    <li className={`relative ${isNotLastItem ? 'mb-[230px]' : ''}`}>
+    <li
+      className={`relative ${isNotLastItem ? 'md:mb-[230px] mb-[130px]' : ''}`}
+    >
       <motion.div
         className={`flex flex-wrap 2xl:justify-around justify-center  ${isOdd ? 'flex-row-reverse' : ''}`}
         ref={ref}
@@ -34,7 +36,7 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
         transition={{ duration: 0.5 }}
       >
         <div
-          className={`max-w-[530px] mb-[50px] max-h-[400px] ${s.corner} ${isOdd ? s.odd : s.even}`}
+          className={`max-w-[530px] lg:mr-[30px] mb-[50px] max-h-[400px] ${s.corner} ${isOdd ? s.odd : s.even}`}
         >
           <Image
             src={item.img}
@@ -43,25 +45,24 @@ const ProjectListItem: FC<IProjectItemProps> = ({ item, index }) => {
           />
         </div>
         <div>
-          <h4 className='text-white text-[30px] leading-[36px] font-semibold mb-[20px]'>
+          <h4 className='text-white sm:text-[30px] text-[20px] leading-[36px] font-semibold mb-[20px]'>
             <span className='inline-block mr-[30px]'>0{index + 1}</span>
             <span>{t(item.tKeyName)}</span>
           </h4>
 
-          <p className='text-gray-secondary text-[16px] leading-[19px] font-normal max-w-[430px] mb-[30px] text-wrap'>
+          <p className='text-gray-secondary sm:text-[16px] text-[14px] leading-[19px] font-normal max-w-[430px] mb-[30px] text-wrap'>
             {t(item.tKeyDesc)}.
           </p>
 
-          <div className='mb-[50px] flex items-baseline'>
-            <span className='text-white text-[14px] leading-[17px] font-normal mr-[15px]'>
+          <div className='sm:mb-[50px] mb-[30px] flex items-baseline'>
+            <span className='text-white sm:text-[14px] text-[12px] leading-[17px] font-normal mr-[15px]'>
               {t('projects.stack')}:
             </span>
-            <ul className='flex'>
+            <ul className='flex flex-wrap'>
               {item.stack.map((item, index, arr) => (
                 <li
                   key={item}
-                  className='inline-block mr-[10px]'
-                >{`${item} ${index + 1 < arr.length ? ',' : ''}`}</li>
+                >{`${item} ${index + 1 < arr.length ? ', ' : ''}`}</li>
               ))}
             </ul>
           </div>
