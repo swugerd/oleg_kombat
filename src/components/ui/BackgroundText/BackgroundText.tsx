@@ -13,6 +13,8 @@ const BackgroundText: FC<IBackgroundTextProps> = ({ text, className }) => {
     }
   }, [animatedText])
 
+  if (window.innerWidth <= 1024) return
+
   return (
     <pre
       ref={ref}

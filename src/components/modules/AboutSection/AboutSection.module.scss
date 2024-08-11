@@ -9,5 +9,11 @@
     position: absolute;
     left: -50px;
     top: -50px;
+
+    @media (max-width: 768px) {
+      left: -30px;
+      top: -40px;
+      transform: scale(0.5);
+    }
   }
 }

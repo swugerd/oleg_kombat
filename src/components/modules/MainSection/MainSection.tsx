@@ -25,7 +25,7 @@ const MainSection = () => {
 
   return (
     <section
-      className={`sm:h-[100vh] container m-auto`}
+      className={`h-[100vh] container m-auto`}
       ref={sectionRef}
       id='main'
     >
