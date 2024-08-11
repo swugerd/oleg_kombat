@@ -21,7 +21,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className={`py-[85px] bg-black-secondary relative overflow-x-hidden`}
+      className={`sm:py-[85px] py-[50px] bg-black-secondary relative overflow-hidden`}
       id='about'
       ref={sectionRef}
     >
@@ -29,32 +29,32 @@ const AboutSection = () => {
         <HeadingWithBrackets
           isSectionTitle
           text={t('titles.about')}
-          className='mb-[150px] block text-center'
+          className='lg:mb-[150px] sm:mb-[100px] mb-[50px] block text-center'
         />
-        <div className='flex justify-around mb-[50px]'>
+        <div className='flex justify-between lg:items-start items-center lg:flex-row flex-col-reverse mb-[50px]'>
           <Image
             src={photo}
             alt='My photo'
             width={470}
             height={550}
-            className='rounded-[20px]'
+            className='rounded-[20px] lg:mr-[75px] mt-[50px] relative z-[1000] md:h-[550px] h-[400px] object-cover'
           />
-          <div className='max-w-[580px]'>
+          <div className='max-w-[850px]'>
             <h3
-              className={`text-white font-extrabold text-[30px] leading-[36px] mb-[30px] ${s.quote}`}
+              className={`text-white font-extrabold sm:text-[30px] text-[20px] leading-[36px] mb-[30px] ${s.quote}`}
             >
               {t('about.title')}
             </h3>
-            <p className='text-[18px] leading-[27px] mb-[30px] text-gray font-normal'>
+            <p className='sm:text-[18px] text-[16px] leading-[27px] mb-[30px] text-gray font-normal'>
               {t('about.description')}.
             </p>
-            <p className='text-[18px] leading-[27px] text-gray font-normal'>
+            <p className='sm:text-[18px] text-[16px] leading-[27px] text-gray font-normal'>
               {t('about.subDescription')}.
             </p>
           </div>
         </div>
         <div>
-          <p className='text-[18px] leading-[27px] mb-[50px] text-gray font-normal'>
+          <p className='sm:text-[18px] text-[16px] leading-[27px] sm:mb-[50px] mb-[30px] text-gray font-normal'>
             {t('about.skills')}.
           </p>
           <AnimatePresence>
@@ -72,11 +72,11 @@ const AboutSection = () => {
       {isVisible && (
         <BackgroundText
           text={bgFunctionsTexts[2]}
-          className='absolute top-[110px] left-[120px] max-h-[150px] overflow-y-auto'
+          className='absolute top-[110px] left-[120px] max-h-[150px] overflow-y-auto lg:block hidden'
         />
       )}
       <DotsAnimation
-        className='bottom-[50%] right-[-100px]'
+        className='bottom-[50%] right-[-100px] sm:block hidden'
         dotColor='bg-gray-secondary'
       />
     </section>

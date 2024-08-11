@@ -10,7 +10,7 @@ const ScrollArrow = () => {
   return (
     <AnimatePresence>
       <motion.button
-        className={`fixed right-[75px] transition-all hover:bottom-[30px] bottom-[20px] z-[100]`}
+        className={`fixed md:right-[75px] right-[30px] transition-all hover:bottom-[30px] bottom-[20px] z-[1001]`}
         onClick={() => handleArrowClick()}
         initial={{
           opacity: 0,

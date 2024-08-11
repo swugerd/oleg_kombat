@@ -9,7 +9,7 @@ const HeadingWithBrackets: FC<IHeadingWithBracketsProps> = ({
 }) => {
   return (
     <span
-      className={`${className || ''} ${s.title} ${isSectionTitle ? 'font-semibold text-[42px] leading-[51px] text-white' : ''} `}
+      className={`${className || ''} ${s.title} ${isSectionTitle ? 'font-semibold sm:text-[42px] text-[28px] leading-[51px] text-white' : ''} `}
     >
       {text}
     </span>

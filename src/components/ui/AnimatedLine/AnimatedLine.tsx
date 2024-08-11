@@ -5,8 +5,8 @@ import s from './AnimatedLine.module.scss'
 const AnimatedLine: FC<IAnimatedLineProps> = ({ className }) => {
   return (
     <div
-      className={`absolute z-[15] bg-white block ${className ? s[className] : ''}`}
-    ></div>
+      className={`absolute z-[-1] bg-white block ${className ? s[className] : ''}`}
+    />
   )
 }
 

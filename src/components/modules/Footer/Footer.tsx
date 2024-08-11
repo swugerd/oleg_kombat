@@ -5,7 +5,7 @@ const Footer = () => {
   const { t } = useTranslation()
 
   return (
-    <footer className='py-[30px] flex items-center justify-center text-white text-[18px] leading-[22px] font-semibold'>
+    <footer className='py-[30px] flex sm:flex-row flex-col items-center justify-center text-white sm:text-[18px] text-[16px] leading-[22px] font-semibold'>
       <span className='inline-block mr-[10px]'>{t('footer.design')} </span>
       <Link
         href='https://t.me/one_klerics'

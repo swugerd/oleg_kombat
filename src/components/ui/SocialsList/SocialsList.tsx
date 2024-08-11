@@ -8,7 +8,7 @@ const SocialsList: FC<IObserverProps> = ({ isVisible }) => {
   return (
     <AnimatePresence>
       <motion.ul
-        className={`absolute flex gap-[30px] flex-col pt-[240px]`}
+        className={`absolute flex gap-[30px] flex-col sm:top-[240px] top-[205px]`}
         transition={{ duration: 0.5, delay: 1.5 }}
       >
         {socialItems.map((item, index) => (
