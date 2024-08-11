@@ -24,18 +24,18 @@ const CompanyListItem: FC<ICompanyListItemProps> = ({ isVisible, item }) => {
           : {}
       }
     >
-      <div className='flex justify-between mb-[30px]'>
+      <div className='flex sm:justify-between sm:flex-row flex-col sm:mb-[30px] mb-[15px] lg:ps-[0] ps-[50px]'>
         <h5
-          className={`${s.title} text-white text-[30px] leading-[36px] font-semibold`}
+          className={`${s.title} text-white sm:text-[30px] text-[20px] leading-[36px] font-semibold`}
         >
           {t(item.tKeyName)}
         </h5>
-        <span className='text-gray text-[24px] leading-[29px] font-semibold'>
+        <span className='text-gray sm:text-[24px] text-[18px] leading-[29px] font-semibold'>
           {item.hireDate} - {item.dismissalDate}
         </span>
       </div>
-      <div className='mb-[50px]'>
-        <p className='text-gray text-[18px] font-normal leading-[27px]'>
+      <div className='sm:mb-[50px] mb-[30px] lg:ps-[0] ps-[50px]'>
+        <p className='text-gray sm:text-[18px] text-[16px] font-normal leading-[27px]'>
           {t(item.tKeyPost)}
         </p>
       </div>

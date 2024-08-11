@@ -135,7 +135,7 @@
 
 .line4 {
   animation: line4 2s forwards;
-  @apply h-[3px] top-[120px];
+  @apply h-[3px] top-[140px];
   &::before {
     content: '';
     animation: ball4 2s forwards;

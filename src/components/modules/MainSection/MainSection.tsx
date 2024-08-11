@@ -78,7 +78,7 @@ const MainSection = () => {
           exit={{ opacity: 0 }}
           transition={isVisible ? { duration: 1, delay: 1 } : {}}
         >
-          <DotsAnimation className='bottom-[20px] right-[180px] lg:block hidden' />
+          <DotsAnimation className='bottom-[20px] right-[180px]' />
         </motion.div>
       </AnimatePresence>
     </section>
