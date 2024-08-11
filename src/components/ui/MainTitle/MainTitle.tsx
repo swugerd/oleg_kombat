@@ -8,7 +8,7 @@ const MainTitle: FC<IObserverProps> = ({ isVisible }) => {
   const { t } = useTranslation()
 
   return (
-    <h1 className='text-white text-[54px]'>
+    <h1 className='text-white md:text-[54px] sm:text-[34px] text-[20px] md:leading-[65px] leading-[36px]'>
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, transform: 'translateY(-30px)' }}
@@ -22,12 +22,12 @@ const MainTitle: FC<IObserverProps> = ({ isVisible }) => {
         >
           <HeadingWithBrackets
             text={t('main.title')}
-            className='text-[54px] font-extrabold leading-[65px]'
+            className=' font-extrabold '
           />
           <br />
           <HeadingWithBrackets
             text={t('main.subTitle')}
-            className='text-[54px] font-extrabold leading-[65px]'
+            className='font-extrabold'
           />
         </motion.div>
       </AnimatePresence>

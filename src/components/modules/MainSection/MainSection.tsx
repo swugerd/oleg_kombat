@@ -25,12 +25,12 @@ const MainSection = () => {
 
   return (
     <section
-      className={`h-[100vh] container m-auto`}
+      className={`sm:h-[100vh] container m-auto`}
       ref={sectionRef}
       id='main'
     >
       <SocialsList isVisible={isVisible} />
-      <div className='pt-[240px] pl-[200px]'>
+      <div className='lg:pt-[240px] pt-[15vh] lg:pl-[200px] sm:pl-[150px] pl-[50px]'>
         <MainTitle isVisible={isVisible} />
         <AnimatePresence>
           <motion.div
@@ -39,10 +39,14 @@ const MainSection = () => {
             exit={{ opacity: 0 }}
             transition={isVisible ? { duration: 1, delay: 1 } : {}}
           >
-            <h2 className='text-gray font-normal leading-[26px] tracking-[1px] text-[18px] max-w-[500px] mb-[75px]'>
+            <h2 className='text-gray font-normal leading-[26px] tracking-[1px] sm:text-[18px] text-[14px] max-w-[500px] sm:mb-[75px] mb-[30px]'>
               {t('main.description')}
             </h2>
-            <Link text={t('main.resumeBtn')} link={resumeLink} />
+            <Link
+              text={t('main.resumeBtn')}
+              link={resumeLink}
+              className='sm:ms-0 mx-auto'
+            />
           </motion.div>
         </AnimatePresence>
       </div>
@@ -57,12 +61,12 @@ const MainSection = () => {
         <>
           <BackgroundText
             text={bgFunctionsTexts[0]}
-            className='absolute top-[80px] left-[20vw]'
+            className='absolute top-[80px] left-[20vw] z-[-1] lg:block hidden'
           />
 
           <BackgroundText
             text={bgFunctionsTexts[1]}
-            className='absolute bottom-[50px] left-[15vw]'
+            className='absolute bottom-[50px] lg:left-[15vw] left-[12vw] z-[-1] md:max-w-none max-w-[400px] overflow-x-hidden sm:block hidden'
           />
         </>
       )}
@@ -74,7 +78,7 @@ const MainSection = () => {
           exit={{ opacity: 0 }}
           transition={isVisible ? { duration: 1, delay: 1 } : {}}
         >
-          <DotsAnimation className='bottom-[20px] right-[180px]' />
+          <DotsAnimation className='bottom-[20px] right-[180px] lg:block hidden' />
         </motion.div>
       </AnimatePresence>
     </section>

@@ -17,6 +17,15 @@
   }
 }
 
+@keyframes line1-mobile {
+  0% {
+    @apply h-[0px];
+  }
+  100% {
+    @apply h-[190px];
+  }
+}
+
 @keyframes ball1 {
   0% {
     @apply top-[0px];
@@ -26,9 +35,18 @@
   }
 }
 
+@keyframes ball1-mobile {
+  0% {
+    @apply top-[0px];
+  }
+  100% {
+    @apply top-[185px];
+  }
+}
+
 .line2 {
   animation: line2 2s forwards;
-  @apply bottom-[202px] left-[-20px] h-[3px];
+  @apply bottom-[202px] left-[-20px] h-[3px] w-[450px];
   &::before {
     content: '';
     animation: ball2 2s forwards;
@@ -45,12 +63,45 @@
   }
 }
 
+@keyframes line2-mobile {
+  0% {
+    @apply w-[0px];
+  }
+  100% {
+    @apply w-[200px];
+  }
+}
+
 @keyframes ball2 {
   0% {
     @apply left-[0px];
   }
   100% {
     @apply left-[450px];
+  }
+}
+
+@keyframes ball2-mobile {
+  0% {
+    @apply left-[0px];
+  }
+  100% {
+    @apply left-[200px];
+  }
+}
+
+@media (max-width: 640px) {
+  .line1 {
+    animation: line1-mobile 2s forwards;
+    &::before {
+      animation: ball1-mobile 2s forwards;
+    }
+  }
+  .line2 {
+    animation: line2-mobile 2s forwards;
+    &::before {
+      animation: ball2-mobile 2s forwards;
+    }
   }
 }
 

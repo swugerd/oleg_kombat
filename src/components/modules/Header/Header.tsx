@@ -2,16 +2,21 @@
 import HeadingWithBrackets from '@/components/ui/HeadingWithBrackets/HeadingWithBrackets'
 import { AllowedLangs } from '@/constants/langs'
 import { handleSmoothScroll } from '@/utils'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { headerLinks } from './links.data'
 
 const Header = () => {
   const { t, i18n } = useTranslation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const handleChangeLang = (lang: string) => {
     i18n.changeLanguage(lang)
     localStorage.setItem('lang', lang)
+  }
+
+  const handleMobileMenuOpen = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
   useEffect(() => {
@@ -23,7 +28,7 @@ const Header = () => {
 
   return (
     <header className='text-base absolute left-0 right-0 z-[10]'>
-      <nav className='flex justify-around py-[30px] container mx-auto'>
+      <nav className='flex sm:justify-around justify-center py-[30px] container mx-auto'>
         <ul className='flex text-white gap-[30px]'>
           <li className='hover:opacity-70 transition-opacity'>
             <button onClick={() => handleChangeLang(AllowedLangs.RU)}>
@@ -36,7 +41,7 @@ const Header = () => {
             </button>
           </li>
         </ul>
-        <ul className='flex gap-[50px]'>
+        <ul className={`sm:flex gap-[50px] top-[50px] right-[10px] hidden`}>
           {headerLinks.map((item) => (
             <li key={item.key}>
               <a

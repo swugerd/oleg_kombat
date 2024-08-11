@@ -25,6 +25,9 @@ const config: Config = {
       gridTemplateColumns: {
         '16': 'repeat(16, minmax(0, 1fr))',
       },
+      container: {
+        padding: '10px',
+      },
     },
     colors,
   },
