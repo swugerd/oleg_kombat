@@ -23,6 +23,7 @@ const CompanyListItem: FC<ICompanyListItemProps> = ({ isVisible, item }) => {
             }
           : {}
       }
+      className='mt-10'
     >
       <div className='flex sm:justify-between sm:flex-row flex-col sm:mb-[30px] mb-[15px] lg:ps-[0] ps-[50px]'>
         <h5
@@ -31,7 +32,7 @@ const CompanyListItem: FC<ICompanyListItemProps> = ({ isVisible, item }) => {
           {t(item.tKeyName)}
         </h5>
         <span className='text-gray sm:text-[24px] text-[18px] leading-[29px] font-semibold'>
-          {item.hireDate} - {item.dismissalDate}
+          {item.hireDate} - {item?.dismissalDate || t('workExperience.presentDate')}
         </span>
       </div>
       <div className='sm:mb-[50px] mb-[30px] lg:ps-[0] ps-[50px]'>

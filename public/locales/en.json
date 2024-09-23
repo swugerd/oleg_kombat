@@ -21,9 +21,14 @@
     },
     "workExperience": {
       "title": "My work experience",
+      "presentDate": "Up to the present",
       "company1": {
         "name": "Alphamatica",
         "post": "Junior Front-end developer"
+      },
+      "company2": {
+        "name": "MCN Telecom",
+        "post": "Middle Front-end developer"
       }
     },
     "projects": {

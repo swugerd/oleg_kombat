@@ -23,9 +23,14 @@
     },
     "workExperience": {
       "title": "Мой опыт работы",
+      "presentDate": "По настоящее время",
       "company1": {
         "name": "Альфаматика",
         "post": "Junior Front-end разработчик"
+      },
+      "company2": {
+        "name": "MCN Telecom",
+        "post": "Middle Front-end разработчик"
       }
     },
     "projects": {
