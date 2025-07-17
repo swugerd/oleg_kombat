@@ -7,9 +7,9 @@
     },
     "main": {
       "title": "Hello, my name is Oleg",
-      "subTitle": "I am Full-Stack - web developer",
+      "subTitle": "I am FullStack - web developer",
       "description":
-        "I am Full-stack web developer. I am currently working as front end web developer",
+        "I am Fullstack web developer. I am currently working as Frontend web developer",
       "resumeBtn": "Resume"
     },
     "about": {
@@ -24,11 +24,11 @@
       "presentDate": "Up to the present",
       "company1": {
         "name": "Alphamatica",
-        "post": "Junior Front-end developer"
+        "post": "Junior Frontend"
       },
       "company2": {
         "name": "MCN Telecom",
-        "post": "Middle Front-end developer"
+        "post": "Middle Frontend Lead"
       }
     },
     "projects": {

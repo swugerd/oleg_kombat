@@ -7,9 +7,9 @@
     },
     "main": {
       "title": "Привет, я Олег",
-      "subTitle": "Full-Stack - Разработчик",
+      "subTitle": "FullStack - Разработчик",
       "description":
-        "Я Full-stack разработчик. В настоящее время я работаю Front-end разработчиком",
+        "Я Fullstack разработчик. В настоящее время я работаю Frontend разработчиком",
       "resumeBtn": "Резюме"
     },
     "about": {
@@ -26,11 +26,11 @@
       "presentDate": "По настоящее время",
       "company1": {
         "name": "Альфаматика",
-        "post": "Junior Front-end разработчик"
+        "post": "Junior Frontend"
       },
       "company2": {
         "name": "MCN Telecom",
-        "post": "Middle Front-end разработчик"
+        "post": "Middle Frontend Lead"
       }
     },
     "projects": {

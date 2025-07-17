@@ -8,6 +8,6 @@ export const companies = [
   {
     tKeyName: 'workExperience.company2.name',
     tKeyPost: 'workExperience.company2.post',
-    hireDate: '03.09.2023',
+    hireDate: '03.09.2024',
   },
 ]
